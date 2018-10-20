@@ -10,6 +10,7 @@
            <th>id</th>
            <th>标题</th>
            <th>内容</th>
+           <th>分类</th>
            <th>操作</th>
        </tr>
        @foreach($articles as $article)
@@ -17,9 +18,10 @@
            <td>{{$article->id}}</td>
            <td>{{$article->title}}</td>
            <td>{{$article->content}}</td>
+           <td>{{$article->ArticleCategory->name}}</td>
            <td>
-               <a href="{{route("article.edit",$article->id)}}" class="btn btn-success">编辑</a>
-               <a href="{{route("article.del",$article->id)}}" class="btn btn-danger">删除</a>
+               <a href="{{route("article.edit",$article)}}" class="btn btn-success">编辑</a>
+               <a href="{{route("article.del",$article)}}" class="btn btn-danger">删除</a>
            </td>
        </tr>
            @endforeach

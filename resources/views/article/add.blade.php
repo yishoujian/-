@@ -13,6 +13,18 @@
             <label for="exampleInputEmail2">内容</label>
             <input type="text" class="form-control" name="content" id="exampleInputEmail2" placeholder="请加入内容">
         </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail2">分类</label>
+
+            <select class="form-control" name="category_id">
+                @foreach($acs as $ac)
+                <option value="{{$ac->id}}">{{$ac->name}}</option>
+                @endforeach
+            </select>
+
+        </div>
+
         <button type="submit" class="btn btn-warning">添加</button>
     </form>
 @endsection

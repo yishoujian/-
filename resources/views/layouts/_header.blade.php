@@ -14,8 +14,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="{{route("book.index")}}">小说列表<span class="sr-only">(current)</span></a></li>
-                <li><a href="{{route("article.about")}}">关于我们</a></li>
+                <li class="active"><a href="{{route("article.index")}}">小说列表<span class="sr-only">(current)</span></a></li>
+                <li><a href="{{route("article_category.index")}}">文章分类</a></li>
+                <li class="active"><a href="{{route("goods.index")}}">商品列表<span class="sr-only">(current)</span></a></li>
+                <li><a href="{{route("goods_category.index")}}">商品分类</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">

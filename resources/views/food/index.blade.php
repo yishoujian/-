@@ -11,7 +11,7 @@
             <th>简介</th>
             <th>操作</th>
         </tr>
-        @foreach($foods as $food)
+       @foreach($foods as $food)
         <tr>
             <td>{{$food->id}}</td>
             <td>{{$food->name}}</td>
@@ -26,7 +26,8 @@
         @endforeach
 
     </table>
+    {{$foods->links()}}
 
 
- {{$foods->links()}}
+
     @endsection
