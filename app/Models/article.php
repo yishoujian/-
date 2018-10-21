@@ -4,6 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Models\article
+ *
+ * @property-read \App\Models\ArticleCategory $ArticleCategory
+ * @mixin \Eloquent
+ */
 class article extends Model
 {
     protected $fillable=["title","content","category_id"];

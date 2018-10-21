@@ -57,3 +57,9 @@ Route::get('/goods/show{id}','GoodsController@show')->name("goods.show");
 Route::any('/goods/add','GoodsController@add')->name("goods.add");
 Route::any('/goods/edit/{id}','GoodsController@edit')->name("goods.edit");
 Route::any('/goods/del/{id}','GoodsController@del')->name("goods.del");
+
+//用户
+Route::get('/user/index','UserController@index')->name("user.index");
+Route::any('/user/add','UserController@add')->name("user.add");
+Route::any('/user/edit/{id}','UserController@edit')->name("user.edit");
+Route::any('/user/del/{id}','UserController@del')->name("user.del");
