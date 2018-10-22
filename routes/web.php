@@ -63,3 +63,11 @@ Route::get('/user/index','UserController@index')->name("user.index");
 Route::any('/user/add','UserController@add')->name("user.add");
 Route::any('/user/edit/{id}','UserController@edit')->name("user.edit");
 Route::any('/user/del/{id}','UserController@del')->name("user.del");
+
+//管理员
+Route::get('/admin/index','AdminController@index')->name("admin.index");
+Route::get('/admin/logout','AdminController@logout')->name("admin.logout");
+Route::any('/admin/reg','AdminController@reg')->name("admin.reg");
+Route::any('/admin/login','AdminController@login')->name("admin.login");
+Route::any('/admin/edit/{id}','AdminController@edit')->name("admin.edit");
+Route::any('/admin/del/{id}','AdminController@del')->name("admin.del");
